@@ -1,13 +1,3 @@
-document.querySelectorAll('.ui-toggle').forEach((button) => {
-  button.addEventListener('click', () => {
-    const enabled = document.body.classList.toggle('show-layout');
-    document.querySelectorAll('.ui-toggle').forEach((toggle) => {
-      toggle.setAttribute('aria-pressed', String(enabled));
-      toggle.textContent = enabled ? 'Hide UI' : 'Show UI';
-    });
-  });
-});
-
 document.querySelectorAll('.case-nav a').forEach((link) => {
   link.addEventListener('click', () => {
     const target = document.querySelector(link.getAttribute('href'));
