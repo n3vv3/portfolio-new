@@ -591,6 +591,98 @@ a {
   gap: var(--space-2);
 }
 
+.specs-page {
+  padding-top: var(--space-page-top);
+  max-width: 1440px;
+}
+
+.specs-heading {
+  margin-bottom: var(--space-6);
+}
+
+.specs-heading .eyebrow {
+  color: var(--color-text-muted);
+}
+
+.specs-heading h1 {
+  margin: var(--space-1) 0 var(--space-2);
+  font-size: var(--type-case-title);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -.045em;
+}
+
+.specs-intro {
+  max-width: 720px;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--type-body);
+}
+
+.specs-section {
+  margin-bottom: var(--space-6);
+}
+
+.specs-section h2 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--type-section);
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+
+.specs-table-wrap {
+  overflow-x: auto;
+  border-top: 1px solid var(--color-divider);
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: left;
+  font-size: var(--type-ui);
+}
+
+.specs-table th:first-child { width: 28%; }
+.specs-table th:nth-child(2) { width: 24%; }
+
+.specs-table th,
+.specs-table td {
+  padding: 12px 16px 12px 0;
+  border-bottom: 1px solid var(--color-divider);
+  vertical-align: top;
+}
+
+.specs-table th {
+  color: var(--color-text-muted);
+  font-family: 'Courier New', monospace;
+  font-size: var(--type-label);
+  font-weight: 400;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.specs-table td:first-child,
+.specs-table td:nth-child(2) {
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+}
+
+.specs-color-swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 8px;
+  border: 1px solid var(--color-divider);
+  vertical-align: -2px;
+}
+
+.specs-note {
+  margin: var(--space-2) 0 0;
+  color: var(--color-text-muted);
+  font-size: var(--type-label);
+}
+
 .footer-identity,
 .footer-links {
   display: flex;
@@ -710,6 +802,12 @@ a {
   .footer {
     flex-wrap: wrap;
     margin-top: 56px;
+  }
+
+  .specs-table td:first-child,
+  .specs-table td:nth-child(2) {
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   .footer-identity,
