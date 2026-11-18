@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#050505" />
   <title>SVT Play — Elin Nevdahl</title>
-  <link rel="stylesheet" href="styles.css?v=20261118-2" />
+  <link rel="stylesheet" href="styles.css?v=20261118-10" />
 </head>
 
 <body>
@@ -62,10 +62,10 @@
         <div class="desktop-device">
           <div class="desktop-wireframe" tabindex="0" role="group"
             aria-label="SVT Play sign-in wireframe video. Hover or focus to show playback controls.">
-            <video autoplay muted loop playsinline preload="metadata"
+            <video controls autoplay muted loop playsinline preload="metadata"
               aria-label="Screen recording of the SVT Play sign-in wireframe">
-              <source src="assets/svtplay/svtplay-screenrecording.mov" type="video/quicktime" />
-              Your browser does not support this video. <a href="assets/svtplay/svtplay-screenrecording.mov">Open the
+              <source src="assets/svtplay/svtplay-screenrecording.mp4" type="video/mp4" />
+              Your browser does not support this video. <a href="assets/svtplay/svtplay-screenrecording.mp4">Open the
                 screen recording</a>.
             </video>
           </div>
@@ -128,9 +128,12 @@
         <p>Testing suggested a narrower selection, such as documentaries or children’s content, could make the feature
           more useful. We used these findings to shape a more focused follow-up experiment.</p>
       </div>
-      <figure class="media-figure"><img class="project-image svt-image" src="assets/svtplay/svtplay-03.webp"
-          alt="Curated content recommendation interface" /></figure>
-      <figure class="media-figure quality-chart-figure">
+      <div class="svt-media-grid curated-media-grid">
+        <figure class="media-figure"><img class="project-image svt-image" src="assets/svtplay/svtplay-03.webp"
+            alt="Curated content recommendation interface" />
+          <figcaption>Testing a more focused, category-based selection.</figcaption>
+        </figure>
+        <figure class="media-figure quality-chart-figure">
         <div class="quality-chart" role="group" aria-labelledby="quality-chart-title">
           <div class="quality-chart-heading">
             <div>
@@ -163,9 +166,10 @@
               </div>
             </div>
           </div>
-          <p class="quality-chart-disclaimer">Example figures only — not actual SVT Play results.</p>
+          <p class="quality-chart-disclaimer">Example figures only - not actual SVT Play results.</p>
         </div>
-      </figure>
+        </figure>
+      </div>
     </section>
     <section class="svt-case" id="library"><span class="eyebrow">CASE 03 — UI</span>
       <h2>Redesigned the interface for a growing content library</h2>
@@ -216,12 +220,16 @@
           Alongside the improved experience, we saw better web performance, while the research and design insights could
           be shared with the mobile and TV teams.</p>
       </div>
-      <figure class="media-figure quality-chart-figure">
+      <div class="svt-media-grid library-media-grid">
+        <figure class="media-figure"><img class="project-image svt-image" src="assets/svtplay/svtplay-07.png"
+            alt="Redesigned SVT Play across devices" />
+          <figcaption>New design on all platforms</figcaption>
+        </figure>
+        <figure class="media-figure quality-chart-figure">
         <div class="quality-chart score-chart" role="group" aria-labelledby="score-chart-title">
           <div class="quality-chart-heading">
             <div>
               <h4 id="score-chart-title">Average score</h4>
-              <p>Category design before and after the redesign</p>
             </div>
             <span class="quality-chart-hint">Hover, tap or focus a bar for an example value</span>
           </div>
@@ -266,12 +274,10 @@
               </div>
             </div>
           </div>
-          <p class="quality-chart-disclaimer">Example values reconstructed from the chart; not verified source data.</p>
+          <p class="quality-chart-disclaimer">Example figures only - not actual SVT Play results.</p>
         </div>
       </figure>
-      <figure class="media-figure"><img class="project-image svt-image" src="assets/svtplay/svtplay-07.png"
-          alt="Redesigned SVT Play across devices" /></figure>
-      <p class="caption">New design on all platforms</p>
+      </div>
     </section>
     <section class="svt-case" id="research"><span class="eyebrow">CASE 04 — RESEARCH</span>
       <h2>Established a research foundation for user-centered design</h2>
@@ -317,7 +323,12 @@
           user needs and evaluate ideas against a shared understanding of users. We also shared the findings with
           multiple departments and SVT leadership, extending the research beyond individual projects.</p>
       </div>
-      <figure class="media-figure quality-chart-figure">
+      <div class="svt-media-grid research-media-grid">
+        <figure class="media-figure"><img class="project-image chart-project-image" src="assets/svtplay/svtplay-09.png"
+            alt="SVT Play user need-state cards" />
+          <figcaption>Need-state cards created as a shared research base.</figcaption>
+        </figure>
+        <figure class="media-figure quality-chart-figure">
         <div class="quality-chart goal-chart" role="group" aria-labelledby="goal-chart-title">
           <div class="quality-chart-heading">
             <div>
@@ -344,14 +355,10 @@
               </div>
             </div>
           </div>
-          <p class="quality-chart-disclaimer">Fictional example answer counts — not actual SVT Play results.</p>
+          <p class="quality-chart-disclaimer">Example figures only - not actual SVT Play results.</p>
         </div>
       </figure>
-      <figure class="media-figure"><img class="project-image chart-project-image" src="assets/svtplay/svtplay-09.png"
-          alt="SVT Play user need-state cards" /></figure>
-      <figure class="media-figure"><img class="project-image journey-project-image" src="assets/svtplay/svtplay-10.webp"
-          alt="Map with context and user journeys" /></figure>
-      <p class="caption">Map with context and user journeys</p>
+      </div>
     </section>
     <footer class="footer"><a href="index.html">← Back to selected work</a><a href="volvo.html">Next case: Volvo Cars
         ↗</a><a href="design-specs.html">Design specs ↗</a></footer>

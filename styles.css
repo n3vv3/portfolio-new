@@ -252,6 +252,10 @@ a {
   margin: var(--space-4) 0 var(--space-7);
 }
 
+.case-page:not(.svt-page) .case-nav {
+  margin-bottom: var(--space-4);
+}
+
 .case-nav a {
   padding: 10px 14px;
   border: 1px solid var(--color-divider);
@@ -278,6 +282,20 @@ a {
   margin-bottom: var(--space-8);
 }
 
+#findability {
+  margin-bottom: var(--space-7);
+}
+
+#findability .case-heading,
+#findability .media-figure,
+#findability .copy-block {
+  margin-bottom: var(--space-3);
+}
+
+#findability .process-block {
+  margin-bottom: var(--space-4);
+}
+
 .case-heading {
   margin-bottom: var(--space-4);
 }
@@ -293,7 +311,10 @@ a {
 }
 
 .case-heading h1,
-.case-heading h2 {
+.case-heading h2,
+.svt-case>h1,
+.svt-case>h2 {
+  width: 100%;
   max-width: var(--case-title-max);
   margin: var(--space-1) 0 0;
   font-size: var(--type-case-title);
@@ -315,15 +336,10 @@ a {
   margin: 0 0 var(--space-8);
 }
 
-.svt-case>.eyebrow+h1,
-.svt-case>.eyebrow+h2 {
-  max-width: var(--case-title-max);
-  margin: var(--space-1) 0 var(--space-4);
-  font-size: var(--type-case-title);
-  font-weight: 400;
-  line-height: 1.05;
-  letter-spacing: -.04em;
-  text-wrap: balance;
+.svt-case>h1,
+.svt-case>h2 {
+  max-width: 100%;
+  margin-bottom: var(--space-4);
 }
 
 .copy-block {
@@ -487,6 +503,43 @@ a {
   width: min(64%, 960px);
 }
 
+.dendrogram-collage {
+  position: relative;
+  width: 100%;
+}
+
+.dendrogram-figure {
+  margin: 0;
+}
+
+.dendrogram-general-figure {
+  width: min(82%, 1000px);
+}
+
+.dendrogram-market-figure {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  z-index: 2;
+  width: min(52%, 680px);
+  filter: drop-shadow(0 18px 30px rgb(0 0 0 / 45%));
+}
+
+.dendrogram-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dendrogram-disclaimer {
+  max-width: var(--copy-max);
+  margin: 0 0 var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--type-label);
+  line-height: 1.4;
+}
+
+
 .metric-project-image {
   width: min(58%, 820px);
 }
@@ -505,6 +558,35 @@ a {
 
 .quality-chart {
   width: min(65%, 900px);
+}
+
+.svt-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: var(--space-4);
+  margin: 0 0 var(--space-4);
+}
+
+.svt-media-grid .media-figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.svt-media-grid .svt-image,
+.svt-media-grid .chart-project-image,
+.svt-media-grid .quality-chart {
+  width: 100%;
+  max-width: none;
+}
+
+.svt-media-grid .quality-chart-heading {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.svt-media-grid .quality-chart-hint {
+  text-align: left;
 }
 
 .quality-chart-heading {
@@ -809,10 +891,6 @@ a {
   }
 }
 
-.journey-project-image {
-  width: min(55%, 720px);
-}
-
 .media-figure figcaption,
 .caption {
   color: var(--color-text-muted);
@@ -1086,6 +1164,22 @@ a {
 }
 
 @media (max-width: 800px) {
+  .svt-media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dendrogram-collage {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .dendrogram-general-figure,
+  .dendrogram-market-figure {
+    position: static;
+    width: 100%;
+    filter: none;
+  }
+
   .site-header {
     height: 74px;
   }
@@ -1154,8 +1248,8 @@ a {
 
   .case-heading h1,
   .case-heading h2,
-  .svt-case>.eyebrow+h1,
-  .svt-case>.eyebrow+h2 {
+  .svt-case>h1,
+  .svt-case>h2 {
     font-size: var(--type-case-title);
   }
 
@@ -1166,10 +1260,6 @@ a {
   .svt-image,
   .signin-image,
   .chart-project-image,
-  .journey-project-image {
-    width: 100%;
-  }
-
   .desktop-device {
     width: 100%;
   }
