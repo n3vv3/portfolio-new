@@ -598,6 +598,10 @@ a {
   list-style: none;
 }
 
+.goal-bars {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .quality-bars li {
   min-width: 0;
   text-align: center;
@@ -765,6 +769,10 @@ a {
 @media (max-width: 600px) {
   .quality-chart-body {
     min-width: 600px;
+  }
+
+  .goal-chart .quality-chart-body {
+    min-width: 560px;
   }
 
   .score-chart .quality-chart-body {
