@@ -10,8 +10,7 @@
 </head>
 
 <body>
-  <header class="site-header"><a class="wordmark" href="index.html"><img class="header-avatar"
-        src="assets/elin-portrait.png" alt="" /><span>Elin Nevdahl</span></a></header>
+  <header class="site-header"><a class="wordmark" href="index.html"><span>Elin Nevdahl</span></a></header>
   <main class="case-page page-shell svt-page">
     <p class="case-intro">Over 6 years at SVT Play, I progressed from focusing on UX research and design for the web
       streaming experience to contributing strategically across the entire product ecosystem. I worked across web, TV
@@ -133,8 +132,42 @@
       </div>
       <figure class="media-figure"><img class="project-image svt-image" src="assets/svtplay/svtplay-03.webp"
           alt="Curated content recommendation interface" /></figure>
-      <figure class="media-figure"><img class="project-image chart-project-image" src="assets/svtplay/svtplay-04.png"
-          alt="Results from the curated discovery experiment" /></figure>
+      <figure class="media-figure quality-chart-figure">
+        <div class="quality-chart" role="group" aria-labelledby="quality-chart-title">
+          <div class="quality-chart-heading">
+            <div>
+              <h4 id="quality-chart-title">Quality starts</h4>
+              <p>Illustrative uplift by category</p>
+            </div>
+            <span class="quality-chart-hint">Hover, tap or focus a bar for an example value</span>
+          </div>
+          <div class="quality-chart-scroll">
+            <div class="quality-chart-body">
+              <div class="quality-axis" aria-hidden="true"><span>2,000</span><span>1,000</span><span>0</span></div>
+              <div class="quality-plot">
+                <div class="quality-grid-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+                <ul class="quality-bars">
+                  <li><button class="quality-bar" style="--bar-height:64%" type="button"
+                      aria-label="Dokumentär: 1,280 fictional uplifted quality starts"><span class="quality-bar-fill"></span><span class="quality-bar-value" aria-hidden="true">1,280</span></button><span class="quality-category">Dokumentär</span></li>
+                  <li><button class="quality-bar" style="--bar-height:59%" type="button"
+                      aria-label="Drama: 1,180 fictional uplifted quality starts"><span class="quality-bar-fill"></span><span class="quality-bar-value" aria-hidden="true">1,180</span></button><span class="quality-category">Drama</span></li>
+                  <li><button class="quality-bar" style="--bar-height:49%" type="button"
+                      aria-label="Serier: 980 fictional uplifted quality starts"><span class="quality-bar-fill"></span><span class="quality-bar-value" aria-hidden="true">980</span></button><span class="quality-category">Serier</span></li>
+                  <li><button class="quality-bar" style="--bar-height:39%" type="button"
+                      aria-label="Barn: 780 fictional uplifted quality starts"><span class="quality-bar-fill"></span><span class="quality-bar-value" aria-hidden="true">780</span></button><span class="quality-category">Barn</span></li>
+                  <li><button class="quality-bar" style="--bar-height:29%" type="button"
+                      aria-label="Nyheter: 580 fictional uplifted quality starts"><span class="quality-bar-fill"></span><span class="quality-bar-value" aria-hidden="true">580</span></button><span class="quality-category">Nyheter</span></li>
+                  <li><button class="quality-bar" style="--bar-height:19%" type="button"
+                      aria-label="Reality: 380 fictional uplifted quality starts"><span class="quality-bar-fill"></span><span class="quality-bar-value" aria-hidden="true">380</span></button><span class="quality-category">Reality</span></li>
+                  <li><button class="quality-bar" style="--bar-height:9%" type="button"
+                      aria-label="Filmer: 180 fictional uplifted quality starts"><span class="quality-bar-fill"></span><span class="quality-bar-value" aria-hidden="true">180</span></button><span class="quality-category">Filmer</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="quality-chart-disclaimer">Example figures only — not actual SVT Play results.</p>
+        </div>
+      </figure>
     </section>
     <section class="svt-case" id="library"><span class="eyebrow">CASE 03 — UI</span>
       <h2>Redesigned the interface for a growing content library</h2>
@@ -185,8 +218,59 @@
           Alongside the improved experience, we saw better web performance, while the research and design insights could
           be shared with the mobile and TV teams.</p>
       </div>
-      <figure class="media-figure"><img class="project-image chart-project-image" src="assets/svtplay/svtplay-06.png"
-          alt="Category discovery performance results" /></figure>
+      <figure class="media-figure quality-chart-figure">
+        <div class="quality-chart score-chart" role="group" aria-labelledby="score-chart-title">
+          <div class="quality-chart-heading">
+            <div>
+              <h4 id="score-chart-title">Average score</h4>
+              <p>Category design before and after the redesign</p>
+            </div>
+            <span class="quality-chart-hint">Hover, tap or focus a bar for an example value</span>
+          </div>
+          <div class="score-legend" aria-label="Chart legend">
+            <span><i class="score-legend-swatch old-design"></i>Old category design</span>
+            <span><i class="score-legend-swatch new-design"></i>New category design</span>
+          </div>
+          <div class="quality-chart-scroll">
+            <div class="quality-chart-body">
+              <div class="quality-axis" aria-hidden="true"><span>5</span><span>4</span><span>3</span><span>2</span><span>1</span><span>0</span></div>
+              <div class="quality-plot score-plot">
+                <div class="quality-grid-lines" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                <ul class="score-groups">
+                  <li>
+                    <div class="score-pair">
+                      <button class="score-bar" style="--bar-height:74%;--score-color:var(--color-chart-light)" type="button"
+                        aria-label="Drama, old category design: illustrative average score 3.7 out of 5"><span class="score-bar-fill"></span><span class="score-bar-value" aria-hidden="true">3.7</span></button>
+                      <button class="score-bar" style="--bar-height:76%;--score-color:var(--color-chart-dark)" type="button"
+                        aria-label="Drama, new category design: illustrative average score 3.8 out of 5"><span class="score-bar-fill"></span><span class="score-bar-value" aria-hidden="true">3.8</span></button>
+                    </div>
+                    <span class="quality-category">Drama</span>
+                  </li>
+                  <li>
+                    <div class="score-pair">
+                      <button class="score-bar" style="--bar-height:74%;--score-color:var(--color-chart-light)" type="button"
+                        aria-label="Öppet arkiv, old category design: illustrative average score 3.7 out of 5"><span class="score-bar-fill"></span><span class="score-bar-value" aria-hidden="true">3.7</span></button>
+                      <button class="score-bar" style="--bar-height:72%;--score-color:var(--color-chart-dark)" type="button"
+                        aria-label="Öppet arkiv, new category design: illustrative average score 3.6 out of 5"><span class="score-bar-fill"></span><span class="score-bar-value" aria-hidden="true">3.6</span></button>
+                    </div>
+                    <span class="quality-category">Öppet arkiv</span>
+                  </li>
+                  <li>
+                    <div class="score-pair">
+                      <button class="score-bar" style="--bar-height:72%;--score-color:var(--color-chart-light)" type="button"
+                        aria-label="Nyheter, old category design: illustrative average score 3.6 out of 5"><span class="score-bar-fill"></span><span class="score-bar-value" aria-hidden="true">3.6</span></button>
+                      <button class="score-bar" style="--bar-height:74%;--score-color:var(--color-chart-dark)" type="button"
+                        aria-label="Nyheter, new category design: illustrative average score 3.7 out of 5"><span class="score-bar-fill"></span><span class="score-bar-value" aria-hidden="true">3.7</span></button>
+                    </div>
+                    <span class="quality-category">Nyheter</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="quality-chart-disclaimer">Example values reconstructed from the chart; not verified source data.</p>
+        </div>
+      </figure>
       <figure class="media-figure"><img class="project-image svt-image" src="assets/svtplay/svtplay-07.png"
           alt="Redesigned SVT Play across devices" /></figure>
       <p class="caption">New design on all platforms</p>
