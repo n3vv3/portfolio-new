@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2172 724" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrative launch teaser metrics</title>
+  <desc id="desc">Around 40 percent more daily clicks and 800 additional clicks over one week.</desc>
+  <g fill="#faf9f7" stroke="#d7d5d1" stroke-width="2">
+    <rect x="101" y="166" width="948" height="417" rx="62"/>
+    <rect x="1123" y="166" width="948" height="417" rx="62"/>
+  </g>
+  <g font-family="DM Sans, Arial, sans-serif">
+    <text x="175" y="414" fill="#050707" font-size="226" font-weight="700" letter-spacing="-10">+40%</text>
+    <text x="181" y="508" fill="#707576" font-size="63" font-weight="400">Daily clicks</text>
+    <text x="1197" y="414" fill="#050707" font-size="226" font-weight="700" letter-spacing="-10">+800</text>
+    <text x="1203" y="508" fill="#707576" font-size="63" font-weight="400">Additional clicks</text>
+  </g>
+  <g fill="#edf2e9">
+    <circle cx="915" cy="323" r="80"/>
+    <circle cx="1937" cy="323" r="80"/>
+  </g>
+  <g fill="none" stroke="#173d2c" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M870 360l38-40 27 21 45-52"/>
+    <path d="M956 289h24v24"/>
+    <path d="M1892 360l38-40 27 21 45-52"/>
+    <path d="M1978 289h24v24"/>
+  </g>
+</svg>

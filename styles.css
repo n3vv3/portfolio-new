@@ -496,7 +496,7 @@ a {
 }
 
 .wide-project-image {
-  width: min(90%, 1400px);
+  width: min(80%, 1210px);
 }
 
 .diagram-project-image {
@@ -506,6 +506,30 @@ a {
 .dendrogram-collage {
   position: relative;
   width: 100%;
+}
+
+.volvo-research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: var(--space-4);
+  margin: 0 0 var(--space-5);
+}
+
+.volvo-dendrogram-column,
+.card-sorting-figure {
+  min-width: 0;
+}
+
+.card-sorting-figure {
+  margin: 0;
+}
+
+.card-sorting-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .dendrogram-figure {
@@ -541,7 +565,7 @@ a {
 
 
 .metric-project-image {
-  width: min(58%, 820px);
+  width: min(48%, 700px);
 }
 
 .svt-image {
@@ -1168,6 +1192,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .volvo-research-grid {
+    grid-template-columns: 1fr;
+  }
+
   .dendrogram-collage {
     display: grid;
     gap: var(--space-2);
@@ -1256,12 +1284,15 @@ a {
   .hero-project-image,
   .wide-project-image,
   .diagram-project-image,
-  .metric-project-image,
   .svt-image,
   .signin-image,
   .chart-project-image,
   .desktop-device {
     width: 100%;
+  }
+
+  .metric-project-image {
+    width: min(90%, 700px);
   }
 
   .steps.five,
